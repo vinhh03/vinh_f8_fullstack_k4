@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form đặt hàng</title>
+    <style>
+      body {
+        background-color: #ebf1f1;
+      }
+      form {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        width: 50%;
+      }
+      th {
+        font-size: 16px;
+        text-align: left;
+      }
+      input,
+      select {
+        width: 80%;
+        border: 2px solid #aeb6b6;
+        padding: 8px;
+        box-sizing: border-box;
+        margin-bottom: 4px;
+      }
+      ::placeholder {
+        color: #aeb6b6;
+      }
+      span {
+        color: #aeb6b6;
+      }
+      button {
+        margin-top: 12px;
+        padding: 12px 28px;
+        background-color: #3c9296;
+        color: aliceblue;
+        border: 0;
+        transition-duration: 0.1s;
+      }
+      button:hover {
+        background-color: #204f50;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Try a free sample</h1>
+
+      <p>
+        Sign up to get a coupon you can redeem at your nearest Dancing <br />
+        Goat cafe for a sample of the Colombia Carlos Imbachi coffee. We'll<br />
+        also make sure you don't miss out on news introducing the new <br />
+        coffees that we add to our store regularly.
+      </p>
+    </div>
+
+    <form>
+      <table width="100%" cellspacing="0" cellpadding="4">
+        <tr>
+          <th><label for="first_name">First name</label></th>
+          <th><label for="last_name">Last name</label></th>
+        </tr>
+        <tr>
+          <td><input type="text" id="first_name" placeholder="John " /></td>
+          <td><input type="text" id="last_name" placeholder="Smith" /></td>
+        </tr>
+        <tr>
+          <th><label for="email_address">Email address</label></th>
+          <th><label for="address">Address</label></th>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="email"
+              id="email_address"
+              placeholder="john@example.com"
+            />
+          </td>
+          <td><input type="text" id="address" placeholder="Silk St" /></td>
+        </tr>
+        <tr>
+          <th><label for="city">City</label></th>
+          <th>
+            <label for="state">State <span>(optional)</span></label>
+          </th>
+        </tr>
+        <tr>
+          <td><input type="text" id="city" placeholder="London" /></td>
+          <td><input type="text" id="state" /></td>
+        </tr>
+        <tr>
+          <th><label for="zip_code">ZIP code</label></th>
+          <th><label for="country">Country</label></th>
+        </tr>
+        <tr>
+          <td><input type="text" id="zip_code" placeholder="EC2Y 8DS" /></td>
+          <td>
+            <select name="country" id="country">
+              <option value="uk">United Kingdom</option>
+              <option value="vn">Vietnam</option>
+              <option value="cn">China</option>
+              <option value="jp">Japan</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button type="submit">SEND ME FREE COFFEE</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Máy tính bỏ túi</title>
+    <style>
+      table {
+        width: 30%;
+      }
+      .button,
+      .result {
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #fff;
+        border: 2px solid lightgreen;
+        font-weight: bold;
+        padding: 16px;
+        font-size: 36px;
+      }
+      .result {
+        text-align: right;
+        font-size: 52px;
+        border: none;
+      }
+      ::placeholder {
+        color: #000;
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td colspan="4">
+          <input class="result" type="text" placeholder="9 + 9" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="button" value="1" class="button" class="number" />
+        </td>
+
+        <td>
+          <input type="button" value="2" class="button" class="number" />
+        </td>
+
+        <td>
+          <input type="button" value="3" class="button" class="number" />
+        </td>
+
+        <td>
+          <input type="button" value="+" class="button" class="calculation" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="button" value="4" class="button" class="number" />
+        </td>
+
+        <td>
+          <input type="button" value="5" class="button" class="number" />
+        </td>
+
+        <td>
+          <input type="button" value="6" class="button" class="number" />
+        </td>
+
+        <td>
+          <input type="button" value="-" class="button" class="calculation" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="button" value="7" class="button" class="number" />
+        </td>
+
+        <td>
+          <input type="button" value="8" class="button" class="number" />
+        </td>
+
+        <td>
+          <input type="button" value="9" class="button" class="number" />
+        </td>
+
+        <td>
+          <input type="button" value="x" class="button" class="calculation" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="button" value="C" class="button" class="clear" />
+        </td>
+
+        <td>
+          <input type="button" value="0" class="button" class="number" />
+        </td>
+
+        <td>
+          <input type="button" value="=" class="button" class="calculation" />
+        </td>
+
+        <td>
+          <input type="button" value="/" class="button" class="calculation" />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
