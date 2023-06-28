@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form liên hệ</title>
+    <!-- Link font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link icon awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Link reset CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./assets/css/ex01.css" />
+  </head>
+  <body>
+    <header class="contact__header">
+      <h1 class="contact__heading heading--h1">CONTACT US</h1>
+      <hr class="line" />
+    </header>
+    <!-- End header.contact__header !-->
+
+    <main class="contact">
+      <aside class="contact-info">
+        <header class="contact-info__header">
+          <h2 class="contact-info__heading heading--h2">Contact Info</h2>
+        </header>
+        <!-- End header.contact-info__header -->
+
+        <ul class="info-list">
+          <li class="info-list__item">
+            <a href="https://goo.gl/maps/BmHwz3em8VRiRcCi8" class="info__item">
+              <i class="icon info__icon fa-solid fa-location-dot"></i>
+              <span class="info__decs">
+                321 Awesome Street<br />
+                New York, NY 17022
+              </span>
+            </a>
+          </li>
+          <!-- End info-list__item-location -->
+
+          <li class="info-list__item">
+            <a href="mailto:info@companyname.com" class="info__item">
+              <i class="icon info__icon fa-regular fa-envelope"></i>
+              <span class="info__decs">info@companyname.com</span>
+            </a>
+          </li>
+          <!-- End info-list__item-email -->
+
+          <li class="info-list__item">
+            <a href="tel:+1 800 123 1234" class="info__item">
+              <i class="icon info__icon fa-solid fa-phone"></i>
+              <span class="info__decs">+1 800 123 1234</span>
+            </a>
+          </li>
+          <!-- End info-list__item-tel -->
+        </ul>
+        <!-- End ul.info-list -->
+      </aside>
+      <!-- End aside.contact-info -->
+
+      <div class="contact-form">
+        <header class="contact-form__header">
+          <h2 class="contact-form__heading heading--h2">
+            Having Any Query! Or Book an appointment
+          </h2>
+        </header>
+        <!-- End header.contact-form__header -->
+
+        <form class="contact__form-fields">
+          <input class="form-field" type="text" placeholder="Your Name" />
+
+          <input class="form-field" type="email" placeholder="Your Email" />
+
+          <input class="form-field" type="text" placeholder="Subject" />
+
+          <textarea
+            class="form-field form-field--msg"
+            cols="30"
+            rows="8"
+            placeholder="Message"
+          ></textarea>
+
+          <button class="btn btn-primary">Send Message</button>
+        </form>
+        <!-- End form.contact__form-fields -->
+      </div>
+      <!-- End .contact-form -->
+    </main>
+    <!-- End main.contact -->
+  </body>
+</html>
