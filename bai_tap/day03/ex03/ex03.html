@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Access Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/ex03.css" />
+  </head>
+  <body>
+    <form>
+      <table cellspacing="8">
+        <tr>
+          <td>
+            <label for="input_username">Username:</label>
+          </td>
+          <td>
+            <input id="input_username" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="input_password">Password:</label>
+          </td>
+          <td>
+            <input id="input_password" type="password" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="input_address">City of <br/> Employment:</label>
+          </td>
+          <td>
+            <input id="input_address" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="web-server">Web Server:</label>
+          </td>
+          <td>
+            <select name="web-server" id="web-server">
+              <option>-- Choose a server --</option>
+              <option value="">Asia</option>
+              <option value="">US/UK</option>
+              <option value="">Hong Kong</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              Please specify <br/>
+              your role:
+            </p>
+          </td>
+          <td>
+            <ul>
+              <li>
+                <label class="radio__container"> Admin
+                  <input type="radio" name="role" value="admin" />
+                  <span class="radio__check-mark"></span>
+                </label>
+              </li>
+
+              <li>
+                <label class="radio__container"> Engineer
+                  <input type="radio" name="role" value="engineer" />
+                  <span class="radio__check-mark"></span>
+                </label>
+              </li>
+
+              <li>
+                <label class="radio__container"> Manager
+                  <input type="radio" name="role" value="manager" />
+                  <span class="radio__check-mark"></span>
+                </label>
+              </li>
+
+              <li>
+                <label class="radio__container"> Guest
+                  <input type="radio" name="role" value="guest" />
+                  <span class="radio__check-mark"></span>
+                </label>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              Single Sign-on <br />
+              to the following:
+            </p>
+          </td>
+          <td>
+            <ul>
+
+            <li>
+              <label class="checkbox__container"> Mail
+                <input type="checkbox" name="method" value="mail" />
+                <span class="checkbox__check-mark"></span>
+              </label>
+            </li>
+
+            <li>
+              <label class="checkbox__container"> Payroll
+                <input type="checkbox" name="method" value="payroll" />
+                <span class="checkbox__check-mark"></span>
+              </label>
+                
+            </li>
+            
+            <li>
+              <label class="checkbox__container"> Self-service
+                <input type="checkbox" name="method" value="Self-service" />
+                <span class="checkbox__check-mark"></span>
+              </label>
+            </li>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="form-btn">
+            <button class="btn">Login</button>
+            <button class="btn" type="reset"> Reset</button>
+          </td>
+        </tr>
+      </table>
+
+
+    </form>
+
+  </body>
+</html>
