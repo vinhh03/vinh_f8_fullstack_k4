@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form đặt bàn</title>
+    <!-- Link font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link reset CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./assets/css/ex02.css" />
+  </head>
+  <body>
+    <section class="orders">
+      <div class="container">
+        <div class="orders__title">
+          <h3>Reservation</h3>
+
+          <h2>Book your table</h2>
+        </div>
+        <!-- End .orders__title -->
+        <div class="orders__form">
+          <form class="orders__form-fields">
+            <table cellpadding="0" cellspacing="20" class="form-fields--table">
+              <tr class="form-fields--row">
+                <td class="form-fields--col">
+                  <input class="form-field" type="text" placeholder="NAME" />
+                </td>
+
+                <td class="form-fields--col">
+                  <input class="form-field" type="email" placeholder="EMAIL" />
+                </td>
+              </tr>
+
+              <tr class="form-fields--row">
+                <td class="form-fields--col">
+                  <input class="form-field" type="text" placeholder="DATE" />
+                </td>
+
+                <td class="form-fields--col">
+                  <input class="form-field" type="text" placeholder="TIME" />
+                </td>
+              </tr>
+
+              <tr class="form-fields--row">
+                <td class="form-fields--col">
+                  <input class="form-field" type="text" placeholder="PEOPLE" />
+                </td>
+
+                <td class="form-fields--col">
+                  <button class="btn btn-primary">Find A Table</button>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+        <!-- End orders__form -->
+      </div>
+    </section>
+  </body>
+</html>

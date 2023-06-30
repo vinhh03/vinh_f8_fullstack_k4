@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.orders {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h2, .btn-primary {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+h3, .form-field {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.orders__title {
+    color:#3d2514
+}
+
+h2 {
+    margin: 28px 0 24px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52px;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.orders__form-fields {
+    width: 660px;
+}
+
+.form-field {
+    outline: none;
+    border: 1px solid #c0c0c0;
+    padding: 12px 20px;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 28px;
+}
+
+.form-field, .btn-primary  {
+    width: 300px;
+
+}
+
+
+.form-field::placeholder {
+    color: #3d3d3d;
+}
+
+.btn-primary {
+    display: block;
+    color: #fff;
+    padding: 17.6px 20px;
+    background-color: #bf2222;
+    border: none;
+    border-radius: 4px;
+    transition-duration: .4s;
+}
+
+.btn-primary:hover {
+    background-color: #ffc045;
+}

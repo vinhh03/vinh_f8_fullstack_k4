@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s;
+}
+
+html {
+
+}
+
+body {
+
+}
+
+.best-seller {
+    width: 1240px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 52px;
+    margin-bottom: 8px;
+}
+
+article {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+   
+}
+
+li {
+    display: inline-block;
+}
+
+i {
+    font-size: 12px;
+}
+
+.navbar-list {
+    margin: 20px 0 60px;
+}
+
+.navbar-item:hover span {
+    background-color: #b5ccf0;
+    transition: .1s;
+}
+
+
+span {
+    padding: 12px 28px;
+    background-color: #f4f4f4;
+}
+
+input {
+    display: none;
+}                      
+
+
+
+
+
+input:checked + span{
+   color: #fff;
+   background-color: #28378d;
+}
+
+.products-item:hover img:nth-child(2) {
+    display: block;
+    margin: 0 auto 44px;
+
+}
+
+.products-item:hover img:nth-child(1) {
+    display: none;
+}
+
+.products-cta {
+    display: none;
+}
+
+.products-item:hover .products-cta {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.products-item + .products-item {
+    margin-left: 60px;
+}
+
+img {
+    width: 179px;
+    height: 240px;
+    margin-bottom: 40px;
+}
+
+.products-image-item img:nth-child(2) {
+    display: none;
+}
+
+.products-image-item {
+    position: relative;
+}
+
+.btn {
+    color: #fff;
+    background-color: #28378d;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #1a255f;
+}
+
+.btn-primary {
+    margin-top: 8px;
+    padding: 12px 47px;
+    font-size: 16px;
+}
+
+
+.btn-secondary {
+    padding: 12px;
+}
+
+.btn-secondary + .btn-secondary {
+    margin-left: 12px;
+}
+
+
+.products-rate i, .five-star i {
+    color: #f4c241;
+}
+
+.four-star i:last-child {
+    color: #ddd;
+}
+
+.three-star i:nth-last-child(2), .three-star i:last-child  {
+    color: #ddd;
+}
+
+.two-star i:nth-last-child(3), .two-star i:nth-last-child(2), .two-star i:last-child {
+    color: #ddd;
+}
+
+.one-star i + i {
+    color: #ddd;
+}
+
+.zero-star i{
+    color: #ddd;
+
+}
+
+.products-rate {
+    font-size: 4px;
+}
+
+
+.products-rate,.products-name {
+    margin-bottom: 12px;
+}
+
+.products-price {
+    font-weight: 500;
+}
+
