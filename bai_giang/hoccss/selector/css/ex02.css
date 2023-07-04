@@ -1,0 +1,22 @@
+.box h2 ~ p, .box h2 ~ div p {
+    color: blueviolet;
+}
+.content h2 + h2{
+    color: red;
+}
+
+/* .content p + h2, .content p + h2 + h2 {
+    color: red;
+} */
+
+/* .content p + h2 + h2{
+    color: red;
+} */
+
+/* .box h2 ~ div p {
+    color: blueviolet;
+} */
+
+.todo-list input:checked ~ span{
+    color: red;
+}

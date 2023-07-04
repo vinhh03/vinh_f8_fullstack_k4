@@ -1,0 +1,37 @@
+/* 
+background-color
+background-image
+*/
+
+
+/* body {
+    background-color: aqua;
+}
+
+.box h1 {
+    background-color:brown;
+}
+
+
+.box p {
+    background-color: beige;
+}
+
+.box h1:hover {
+    background-color: transparent;
+} */
+
+
+body {
+    height: 2000px;
+    /* background-color: aqua;
+    background-image: url(https://tophinhanhdep.com/wp-content/uploads/2021/10/1600x900-Wallpapers.jpg);
+    background-repeat: no-repeat;
+    /* background-position: 50% 0; */
+    /* background-size: auto 100%; */
+    /* background-size: contain; */
+    /* background-attachment: fixed; */ 
+
+    background: url("https://tophinhanhdep.com/wp-content/uploads/2021/10/1600x900-Wallpapers.jpg") no-repeat 0 0 / cover fixed aqua ;
+
+}

@@ -1,0 +1,30 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 18px;
+    line-height: 0;
+}
+
+.box {
+    font-size: 1.2em;
+}
+
+.content {
+    /* font-size: 1.5em; */
+    /* font-size: 150%; */
+    /* font-size: 2rem; */
+
+}
+
+/* 
+Đơn vị tương đối 
+- px
+- pt
+
+Đơn vị tương đối
+- em
+- rem
+- percent
+ */

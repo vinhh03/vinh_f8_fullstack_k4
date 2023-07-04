@@ -1,0 +1,47 @@
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway-Bold.ttf);
+    font-weight: 700;
+}
+
+/* 
+font-weight: Thay đổi độ dày của văn bản
+font-style: Thay đổi độ nghiêng của văn bản
+*/
+
+body {
+    font-family: Vinh, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-indent: 12px;
+}
+
+.content a {
+    /* text-decoration: underline overline line-through; */
+    /* text-transform: capitalize; */
+    /* letter-spacing: 3px; */
+    word-spacing: 4px;
+
+}
+
+.box {
+    word-wrap: break-word;
+}

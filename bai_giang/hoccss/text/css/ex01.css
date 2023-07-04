@@ -1,0 +1,30 @@
+.box {
+    color: blueviolet;
+}
+
+.box h1 {
+    color: rgba(137, 43, 226, 0.5);
+}
+
+.box .content {
+    color: brown;
+}
+
+.box h1:hover {
+    /* color: initial; */
+    color: inherit;
+}
+
+/* 
+color
+- name
+- hex
+- rgb
+- hsl
+
+=> Công cụ lấy màu: color picker
+
+ các giá trị có trong các thuộc tính CSS
+- initial
+- inherit
+ */

@@ -60,10 +60,19 @@ span {
 
 input {
     display: none;
-}                      
+}         
 
+.navbar-item {
+    cursor: pointer;
+}
 
+.products-list {
+    display: none;
+}
 
+input[id="skincare"]:checked ~ .products-list .products-item {
+    display: block;
+}
 
 
 input:checked + span{

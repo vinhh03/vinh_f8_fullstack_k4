@@ -1,0 +1,27 @@
+*{
+    color: red;
+}
+
+.title{
+    color: green;
+}
+
+#sub-title{
+    color: blue;
+}
+
+p {
+    color: blueviolet;
+}
+
+.box > h2 {
+    color: aqua;
+}
+
+h1.name#first {
+    color: black;
+}
+
+h2#last.name {
+    color: cadetblue;
+}
