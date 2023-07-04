@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.form__heading {
+    font-family: 'Lobster', cursive;
+}
+
+.form__decs, .form__list {
+    font-family: 'Lato', sans-serif;
+}
+
+.form__decs {
+    margin-bottom: 20px;
+}
+
+.form__decs--highlight {
+    color: #e93f32;
+}
+
+.form__list {
+    list-style: none;
+    text-decoration: none;
+}
+
+.item:not(.item:last-child) {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #dcdcdc;
+}
+
+.item + .item {
+    margin-top: 16px;
+}
+
+.icon--small {
+    position: relative;
+}
+
+.fa-star::before {
+    position: absolute;
+    left: -24px;
+    top: 18px;
+    font-size: 8px;
+    color: #b8bbc9;
+}
+
+.fa-caret-down::before {
+    position: absolute;
+    left: -24px;
+    top: 16px;
+    font-size: 12px;
+    color: #b8bbc9;
+}
+
+.notion {
+    position: relative;
+}
+
+.notion p {
+    position: absolute;
+    top: -52px;
+    left: -16px;
+    background-color: #000;
+    color: #fff;
+    width: 184px;
+    font-size: 16px;
+    padding: 8px;
+    text-align: center;
+}
+
+.notion p::after  {
+    content: "";
+    position: absolute;
+    border: 8px solid;
+    border-color: #000 transparent transparent transparent;
+    top: 34px;
+    left: 28px;
+}
+
+.notion {
+    display: none;
+}
+
+
+
+select {
+    -webkit-appearance: none;
+}
+
+.icon{
+    width: 44px;
+    color: #fff;
+}
+
+.icon::before {
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.item .form-field {
+    width: 456px;
+    outline: none;
+    padding: 12px;
+    border: 1px solid #dcdcdc
+}
+
+.item:active .form-field {
+    border-color:  #333;
+}
+
+.item:active:not(.item:last-child) label {
+    background-color: #333;
+}
+
+.item:active .notion {
+    display: block;
+}
+
+.item:hover .form-field {
+    border-color:  #333;
+}
+
+.item:hover:not(.item:last-child) label {
+    background-color: #333;
+}
+
+
+.form-field:focus {
+    border-color:  #333;
+}
+
+.form-field:focus~label {
+    background-color: #333;
+}
+
+.form-field:focus~.notion {
+    display: block;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    border: none;
+    background-color: #ea3f33;
+    color: #fff;
+    padding: 8px 36px;
+}
+
+.btn:hover {
+    background-color: #dc3125;
+}
+
+.checkbox__container {
+    position: relative;
+    padding: 4px 28px;
+    font-size: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .checkbox__container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkbox__check-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    border: 2px solid #dcdcdc;
+  }
+
+  
+
+  .checkbox__container:hover input ~ .checkbox__check-mark {
+    background: #dcdcdc;
+  }
+  
+
+  .checkbox__container input:checked ~ .checkbox__check-mark {
+    background: #fff;
+  }
+  
+
+  .checkbox__check-mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+
+  .checkbox__container input:checked ~ .checkbox__check-mark:after {
+    display: block;
+  }
+  
+  .checkbox__container .checkbox__check-mark:after {
+    left: 6px;
+    top: 2px;
+    width: 4px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+
+
+
+

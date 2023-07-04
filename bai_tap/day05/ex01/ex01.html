@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập 1</title>
+    <!-- Link font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Link reset CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- Link font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link file CSS -->
+    <link rel="stylesheet" href="./asssets/css/ex01.css" />
+  </head>
+  <body>
+    <form class="contact-form">
+      <h1 class="form__heading heading--h1">Hey there</h1>
+
+      <p class="form__decs">
+        <span class="form__decs--highlight">We'd like to hear from you.</span>
+
+        Send us your message or just say hy with our <br />
+        contact form or directly via phone, we love to chat.
+      </p>
+
+      <ul class="form__list item-list">
+        <li class="item">
+          <div class="icon--small">
+            <i class="fa-sharp fa-solid fa-star"></i>
+          </div>
+
+          <input
+            class="form-field"
+            type="text"
+            placeholder="Your name"
+            id="name"
+          />
+
+          <div class="notion">
+            <p>Enter your name</p>
+          </div>
+
+          <label class="form-field__icon" for="name">
+            <i class="fa-solid fa-user icon"></i>
+          </label>
+        </li>
+
+        <li class="item">
+          <div class="icon--small">
+            <i class="fa-sharp fa-solid fa-star"></i>
+          </div>
+
+          <input
+            class="form-field"
+            type="text"
+            placeholder="your@domain.com"
+            id="email"
+          />
+
+          <div class="notion">
+            <p>Enter your email</p>
+          </div>
+
+          <label class="form-field__icon" for="email">
+            <i class="fa-solid fa-envelope icon"></i>
+          </label>
+        </li>
+
+        <li class="item">
+          <input
+            class="form-field"
+            type="text"
+            placeholder="+44 00 123"
+            id="tel"
+          />
+
+          <div class="notion">
+            <p>Your phone number</p>
+          </div>
+
+          <label class="form-field__icon" for="tel">
+            <i class="fa-solid fa-mobile icon"></i>
+          </label>
+        </li>
+
+        <li class="item">
+          <div class="icon--small">
+            <i class="fa-sharp fa-solid fa-caret-down"></i>
+          </div>
+
+          <select class="form-field" name="subject" id="subject">
+            <option value="subject">Subject</option>
+            <option value="maths">Maths</option>
+            <option value="english">English</option>
+            <option value="science">Science</option>
+          </select>
+
+          <div class="notion">
+            <p>Choose subject</p>
+          </div>
+
+          <label class="form-field__icon" for="subject">
+            <i class="fa-solid fa-book icon"></i>
+          </label>
+        </li>
+
+        <li class="item">
+          <div class="icon--small">
+            <i class="fa-sharp fa-solid fa-star"></i>
+          </div>
+
+          <textarea
+            class="form-field"
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+
+          <div class="notion">
+            <p>Enter your message</p>
+          </div>
+
+          <label class="form-field__icon" for="me">
+            <i class="fa-solid fa-message icon"></i>
+          </label>
+        </li>
+
+        <li class="item">
+          <div class="form-footer">
+            <label class="checkbox__container">
+              Send me a copy of this message
+              <input type="checkbox" name="note" />
+              <span class="checkbox__check-mark"></span>
+            </label>
+
+            <button class="btn btn-primary">SEND</button>
+          </div>
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>
