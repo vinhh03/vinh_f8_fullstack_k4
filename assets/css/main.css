@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Harmony;
+    src: url(../font/Harmony.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway-Bold.ttf);
+    font-weight: 700;
+}
+
+
+
+body {
+    text-align: center;
+    background: black ;
+    font-family: Raleway, sans-serif;
+    color: aliceblue;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+   text-decoration: none; 
+   color: inherit;
+}
+
+.heading--h1 {
+    font-family: Harmony, Raleway, sans-serif;
+    font-size: 200px;
+    font-weight: 100;
+    color: #f9b7d5;
+    margin-bottom: 40px;
+}
+
+.title--sub {
+    font-family: Raleway, sans-serif;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.day__list {
+    margin: 0 100px;
+}
+
+
+.day__list {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.heading--h2 {
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+
+.ex__list li {
+    margin-top: 12px;
+    font-weight: 300;
+}

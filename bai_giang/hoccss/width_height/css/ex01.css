@@ -1,0 +1,20 @@
+body {
+    height: 2000px;
+    width: 2000px;
+}
+
+.box {
+    width: 100vw;
+    height: 100vh;
+    background: green;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    border: 1px solid red;
+}
+
+/* 
+    % = Tỷ lệ với width, height của thẻ cha trực tiếp
+*/

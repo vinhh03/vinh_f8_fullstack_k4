@@ -1,0 +1,25 @@
+.box {
+    /* border-width: 2px;
+    border-style: dotted;
+    border-color: red; */
+    /* border: 2px dotted red; */
+    /* border-left: 1px solid red;
+    border-right: 1px solid green;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid blueviolet; */
+
+    border-top-width: 5px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+
+    border-top-color: red;
+    border-bottom-color: green;
+    border-right-color: blue;
+    border-left-color: blueviolet;
+}

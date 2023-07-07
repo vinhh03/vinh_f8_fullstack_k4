@@ -1,0 +1,10 @@
+.box h1 {
+  color: green;
+}
+
+.box:hover {
+  /* filter: opacity(0.9); */
+  /* opacity: 0.5; */
+  filter: grayscale(0.5);
+  filter: blur(5px);
+}

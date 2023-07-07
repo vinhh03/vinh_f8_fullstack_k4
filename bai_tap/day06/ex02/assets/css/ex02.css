@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebf5fe;
+}
+
+.service {
+  width: 1210px;
+  margin: 100px auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.service-item {
+  display: inline-block;
+  width: 380px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 3px solid transparent;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.service-item:nth-child(1):hover {
+  border-color: rgba(228, 88, 126, 1);
+}
+
+.service-item:nth-child(1):hover .icon-background {
+  box-shadow: rgba(228, 88, 126, 0.5) 0px 3px 8px;
+}
+
+.service-item:nth-child(2):hover {
+  border-color: rgba(80, 166, 164, 1);
+}
+
+.service-item:nth-child(2):hover .icon-background {
+  box-shadow: rgba(80, 166, 164, 0.5) 0px 3px 8px;
+}
+
+.service-item:nth-child(3):hover {
+  border-color: rgba(226, 137, 51, 1);
+}
+
+.service-item:nth-child(3):hover .icon-background {
+  box-shadow: rgba(226, 137, 51, 0.5) 0px 3px 8px;
+}
+
+.service-item:nth-child(4):hover {
+  border-color: rgba(51, 108, 207, 1);
+}
+
+.service-item:nth-child(4):hover .icon-background {
+  box-shadow: rgba(51, 108, 207, 0.5) 0px 3px 8px;
+}
+
+.service-item:nth-child(5):hover {
+  border-color: rgba(115, 36, 204, 1);
+}
+
+.service-item:nth-child(5):hover .icon-background {
+  box-shadow: rgba(115, 36, 204, 0.5) 0px 3px 8px;
+}
+
+.service-item:nth-child(6):hover {
+  border-color: rgba(107, 141, 46, 1);
+}
+
+.service-item:nth-child(6):hover .icon-background {
+  box-shadow: rgba(107, 141, 46, 0.5) 0px 3px 8px;
+}
+
+.item-header {
+  display: flex;
+}
+
+.icon {
+  position: relative;
+}
+
+i.fa-solid {
+  position: absolute;
+  font-size: 32px;
+  color: #fff;
+}
+
+i.brush-icon {
+  left: 18px;
+  top: 15px;
+}
+
+i.layer-group-icon {
+  left: 12px;
+  top: 14px;
+}
+
+i.table-icon,
+i.envelope-icon {
+  left: 14px;
+  top: 14px;
+}
+
+i.rocket-icon {
+  left: 13px;
+  top: 16px;
+}
+
+i.bolt-icon {
+  left: 16px;
+  top: 14px;
+}
+
+.brush-icon ~ .icon-background {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(
+    90deg,
+    rgba(228, 88, 126, 1) 0%,
+    rgba(227, 118, 90, 1) 100%
+  );
+}
+
+.table-icon ~ .icon-background {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(
+    90deg,
+    rgba(80, 166, 164, 1) 0%,
+    rgba(122, 215, 160, 1) 100%
+  );
+}
+
+.bolt-icon ~ .icon-background {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(
+    90deg,
+    rgba(226, 137, 51, 1) 0%,
+    rgba(244, 193, 74, 1) 100%
+  );
+}
+
+.rocket-icon ~ .icon-background {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(
+    90deg,
+    rgba(51, 108, 207, 1) 0%,
+    rgba(109, 143, 243, 1) 100%
+  );
+}
+
+.layer-group-icon ~ .icon-background {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(
+    90deg,
+    rgba(115, 36, 204, 1) 0%,
+    rgba(179, 87, 231, 1) 100%
+  );
+}
+
+.envelope-icon ~ .icon-background {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(
+    90deg,
+    rgba(107, 141, 46, 1) 0%,
+    rgba(145, 195, 84, 1) 100%
+  );
+}
+
+.heading--h2 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-left: 12px;
+}
+
+.item-decs {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #666666;
+  margin-top: 12px;
+}
+
+.item-link {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #2a64ea;
+  margin-top: 20px;
+}
+
+.item-link:hover {
+  color: #0046eb;
+}
