@@ -93,7 +93,8 @@ a {
 }
 
 .btn--secondary:hover {
-  background-color: #fff1f1;
+  color: #df3324;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .icon-list {
