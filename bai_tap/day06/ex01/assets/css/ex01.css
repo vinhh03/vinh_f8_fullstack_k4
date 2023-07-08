@@ -69,6 +69,15 @@ ul {
   position: absolute;
 }
 
+.subnav::before {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 10px;
+  top: 0;
+  background-color: transparent;
+}
+
 .triangle {
   position: absolute;
   border-left: 8px solid transparent;
@@ -83,11 +92,17 @@ ul {
 .subnav-list {
   position: absolute;
   top: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 8px;
 }
 
 .subnav-item {
   width: 260px;
+}
+
+.subnav-item:hover a {
+  background-color: #2da5da;
+  color: #fff;
+  transition: 0.2s;
 }
 
 .subnav-item + .subnav-item {
