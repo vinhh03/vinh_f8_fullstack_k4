@@ -8,7 +8,7 @@ html {
   text-align: center;
   font-family: "Nunito", sans-serif;
   background: url(http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg)
-    no-repeat 0 -240px / cover;
+    no-repeat bottom center / cover;
 }
 
 ul {
