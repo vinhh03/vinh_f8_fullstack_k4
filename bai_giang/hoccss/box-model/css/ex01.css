@@ -1,0 +1,30 @@
+/* .box {
+  width: 300px;
+  border: 1px solid red;
+  margin: 30px auto;
+  padding: 15px;
+  box-sizing: border-box;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.products {
+  width: 800px;
+  margin: 30px auto;
+  border: 1px solid red;
+}
+
+.products::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.products .item {
+  float: left;
+  background-color: aqua;
+}

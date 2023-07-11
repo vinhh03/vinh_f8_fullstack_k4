@@ -1,0 +1,47 @@
+.box {
+  width: 300px;
+  border: 1px solid red;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+.box::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col-1 {
+  width: 100px;
+  height: 50px;
+  background-color: green;
+  color: #fff;
+  float: left;
+}
+
+.col-2 {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  color: #fff;
+  float: left;
+}
+
+.text {
+  clear: both;
+}
+
+.clearfix {
+  display: block;
+  clear: both;
+}
+
+/* float: trôi thành phần sang bên trái hoặc bên phải theo cha trực tiếp */
+
+/* 
+    clear: Khắc phục tự động trôi
+        clear: left
+        clear: right
+        clear: both
+
+*/
