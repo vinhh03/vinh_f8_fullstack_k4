@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+/* section.service */
+.service {
+  text-align: center;
+}
+/* End section.service */
+
+/* Common .service-title & .item-title */
+.service-title,
+.item-title {
+  font-family: "Playfair Display", serif;
+}
+/* End Common .service-title & .item-title */
+
+/* .service-title */
+.service-title {
+  margin: 20px 0;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52px;
+}
+/* End .service-title */
+
+/* .service-subtitle */
+.service-subtitle {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+/* End .service-subtitle */
+
+/* .service-list */
+.service-list {
+  margin: 60px auto;
+  width: calc(370px * 3 + 30px * 2);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 52px;
+}
+/* End service-list */
+
+/* .service-item */
+.service-item {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  align-content: flex-start;
+}
+/* End .service-item */
+
+/* .item-title */
+.item-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+}
+/* End .item-title */
+
+/* Common .item-decs & .btn */
+.item-decs,
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* End Common .item-decs & .btn */
+
+/* .item-decs */
+.item-decs {
+  height: 110px;
+  color: #808080;
+  line-height: 22px;
+}
+/* End .item-decs */
+
+/* .btn */
+.btn {
+  width: 148px;
+  padding: 12px 0;
+  line-height: 20px;
+  border: 0;
+  color: #fff;
+  background-color: #253993;
+}
+
+.btn:hover {
+  color: #253993;
+  background-color: #c6eeff;
+}
+/* End .btn */
