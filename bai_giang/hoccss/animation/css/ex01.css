@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading::before {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 30px;
+  border: 3px solid;
+  border-color: orange transparent orange transparent;
+  border-radius: 50%;
+  animation: spinner 1s ease infinite;
+}
+
+.loading::after {
+  content: "Loading...";
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

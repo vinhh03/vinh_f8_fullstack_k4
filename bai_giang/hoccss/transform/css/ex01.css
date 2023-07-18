@@ -1,0 +1,9 @@
+.container:hover .box {
+  transform: rotate(360deg) scale(0.2) translate(200px, 0px);
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+}

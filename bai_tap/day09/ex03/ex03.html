@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập 3</title>
+    <link rel="stylesheet" href="./assets/css/ex03.css" />
+  </head>
+  <body>
+    <section class="section-form">
+      <h2 class="section-heading">Drop Us a Line</h2>
+      <p class="desc">
+        Reach out to us from our contact form and we will get back to you
+        shortly.
+      </p>
+      <form class="form-container">
+        <ul class="form-list">
+          <li class="form-item">
+            <input class="form-field" type="text" id="first-name" required />
+            <label class="form-label" for="first-name">First Name *</label>
+          </li>
+          <li class="form-item">
+            <input class="form-field" type="text" id="last-name" required />
+            <label class="form-label" for="last-name">Last Name *</label>
+          </li>
+          <li class="form-item">
+            <input class="form-field" type="text" id="email" required />
+            <label class="form-label" for="email">Email *</label>
+          </li>
+          <li class="form-item">
+            <select class="form-field" name="jobs" id="jobs">
+              <option value="0">Select a department</option>
+              <option value="1">Sales</option>
+              <option value="2">Marketing</option>
+              <option value="3">Customer Support</option>
+            </select>
+            <i class="fa-solid fa-chevron-down icon-select"></i>
+          </li>
+
+          <li class="form-item">
+            <textarea
+              class="form-field"
+              id=""
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+            <label for="" class="form-label message-label">Message *</label>
+          </li>
+        </ul>
+        <button class="btn" type="submit">Send message</button>
+      </form>
+    </section>
+  </body>
+</html>

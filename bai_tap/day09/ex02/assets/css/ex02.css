@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.card-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 38px 24px;
+  flex-wrap: wrap;
+
+  width: 1200px;
+  margin: 40px auto;
+}
+
+.card-item {
+  flex-basis: calc((100% - 48px) / 3);
+  padding: 16px;
+
+  position: relative;
+
+  border: 1px solid #ccc;
+
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 20px;
+  border: 2px solid transparent;
+  transition: 0.5s ease;
+}
+
+.card-item:hover .card-content {
+  border-color: #fff;
+}
+
+img.icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+}
+
+.item-heading {
+  margin: 32px 0 12px 0;
+
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+
+  transition: 0.4s ease;
+}
+
+.item-desc {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  color: #5a5a5f;
+
+  transition: 0.5s ease;
+}
+
+.bg {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  opacity: 0;
+}
+
+.card-item:hover .bg {
+  opacity: 1;
+}
+
+.card-item:hover .overlay {
+  position: absolute;
+
+  background-color: rgba(162, 111, 90, 0.8);
+  inset: 0;
+}
+
+.card-item:hover .icon {
+  opacity: 0;
+}
+
+.card-item:hover .item-desc,
+.card-item:hover .item-heading {
+  position: relative;
+  transform: translateY(-76px);
+  color: #fff;
+  z-index: 1;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 4px;
+  position: absolute;
+  bottom: -32px;
+  color: #fff;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.btn:hover i {
+  background-color: #fff;
+  color: #000;
+  transition: 0.4s ease;
+}
+
+.card-item:hover .btn {
+  transform: translateY(-72px);
+  opacity: 1;
+}
+
+.btn--text {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.btn i {
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #fff;
+}
