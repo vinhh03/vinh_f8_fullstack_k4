@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-family: "Manrope", sans-serif;
+  background-color: #fefefe;
+}
 
 ul {
   list-style: none;
@@ -18,7 +22,20 @@ ul {
   margin: 20px auto;
 }
 
-.form-container {
+.section-heading {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+
+  color: #343f52;
+}
+
+.desc {
+  color: #60697b;
+  margin: 24px 0 52px;
+}
+
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,21 +59,68 @@ ul {
   width: 100%;
   height: 52px;
   padding-left: 20px;
-  border: 1px solid red;
   border-radius: 8px;
+  border: 1px solid rgba(8, 60, 130, 0.07);
+  box-shadow: 0 0 28px rgba(30, 34, 40, 0.04);
+  background-color: #fefefe;
+  outline: none;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form-field:focus:not(select.form-field) {
+  border-color: rgba(63, 120, 224, 0.7);
+  padding-top: 3%;
+}
+
+.form-field:focus ~ .form-label {
+  font-size: 12px;
+  line-height: 16px;
+  transform: translateY(-12px);
+  transition: 0.2s ease;
 }
 
 .form-label {
   position: absolute;
-  top: 16px;
-  left: 20px;
+  top: 0;
+  left: 0;
+  padding: 16px 20px;
+  color: #959ca9;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  color: #959ca9;
+}
+
+.select-icon {
+  position: absolute;
+  font-size: 12px;
+  top: 20px;
+  right: 20px;
+  color: #959ca9;
 }
 
 textarea.form-field {
   width: 850px;
+  height: 152px;
+  /* padding-top: 32px; */
 }
 
 .btn {
-  padding: 16px 24px;
+  padding: 12px 24px;
   border-radius: 99px;
+  border: 0;
+  background-color: #3f78e0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px, rgba(0, 0, 0, 0.12) 0px 6px 6px;
 }
