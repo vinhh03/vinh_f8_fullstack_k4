@@ -1,0 +1,23 @@
+:root {
+  --secondary-color: blue;
+  --text-color: #333;
+  --font-family: Roboto, sans-serif;
+  --border-color: red;
+  --primary-color: 1px solid var(--border-color);
+}
+
+body {
+  color: var(--primary-color);
+}
+
+.box {
+  border: var(--primary-color);
+}
+
+.box p {
+  font-family: var(--font-family);
+}
+
+.box:hover {
+  --border-color: blue;
+}

@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Manrope", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mega-menu {
+  width: 100%;
+  height: 100vh;
+  /* background: url(https://sandbox.elemisthemes.com/assets/img/illustrations/i21.png)
+    no-repeat center center / cover scroll; */
+}
+
+.mega-menu-header {
+  padding: 28px 140px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  flex: 2 1 auto;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  flex: 3 0 auto;
+  align-items: center;
+}
+
+.navbar-item {
+  position: relative;
+}
+
+/* .navbar-link */
+.navbar-link {
+  display: flex;
+  position: relative;
+  flex-wrap: nowrap;
+  padding: 0 24px;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #343f52;
+}
+
+.navbar-link i::before {
+  position: absolute;
+  font-size: 20px;
+  color: #5eb9f0;
+}
+
+.navbar-link:hover {
+  color: #5eb9f0;
+}
+/* End .navbar-link */
+
+/* .navbar-btn */
+
+.navbar-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-btn button {
+  color: #fff;
+  background-color: #5eb9f0;
+  border: 0;
+  padding: 8px 20px;
+  border-radius: 99px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.navbar-btn .bars-btn {
+  display: none;
+  font-size: 20px;
+}
+
+/* @media screen and (max-width: 1220px) {
+  .navbar {
+    display: none;
+  }
+} */
+
+@media screen and (max-width: 992px) {
+  .navbar-btn .bars-btn {
+    display: block;
+  }
+
+  .navbar {
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
