@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #323543;
+}
+
+.container {
+  height: 600px;
+  width: 600px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seal-flap {
+  position: absolute;
+  border-top: 100px solid #cb4c44;
+  border-bottom: 100px solid transparent;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  top: 200px;
+  z-index: 2;
+  transform-origin: top;
+  transition: 0.4s ease-in-out;
+}
+
+.envelope {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  top: 0;
+}
+
+.envelope::before {
+  content: "";
+  position: absolute;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid #de6055;
+  border-left: 200px solid #d85449;
+  border-right: 200px solid #de6055;
+  bottom: 0;
+  z-index: 1;
+}
+
+.envelope::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  background-color: #cb4c44;
+  bottom: 0;
+}
+
+.container:hover .seal-flap {
+  transform-origin: top;
+  transform: rotateX(-180deg);
+  z-index: 0;
+}
+
+.container:hover .envelope::before {
+  z-index: 2;
+}
+
+.container:hover .letter {
+  transform: translateY(0);
+  z-index: 1;
+
+  transition-delay: 0.2s;
+}
+
+.letter {
+  position: absolute;
+  width: 340px;
+  height: 360px;
+  background-color: #fff;
+  bottom: 0;
+  left: 30px;
+  overflow: hidden;
+  transform: translateY(50%);
+  transition: 0.6s ease-in-out;
+}
+
+.stripe {
+  border-top: 16px dashed #c75d61;
+  transform: skewX(-45deg);
+}
+
+.letter-content {
+  position: relative;
+  width: 140px;
+  height: 20px;
+  background-color: #c75d61;
+  top: 20px;
+  left: 12px;
+}
+
+.letter-content::before {
+  content: "";
+  position: absolute;
+  width: 72px;
+  height: 20px;
+  background-color: #c75d61;
+  top: 40px;
+}
+
+.letter-content::after {
+  content: "";
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  background-color: #efcfcd;
+  border-radius: 50%;
+  top: 120px;
+  left: 220px;
+}
+
+.shadow {
+  width: 460px;
+  height: 32px;
+  background-color: #1b1c24;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 60px;
+  filter: blur(8px);
+}

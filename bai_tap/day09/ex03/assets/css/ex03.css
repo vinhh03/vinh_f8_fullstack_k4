@@ -80,6 +80,17 @@ ul {
   transition: 0.2s ease;
 }
 
+.form-field:valid ~ .form-label {
+  font-size: 12px;
+  line-height: 16px;
+  transform: translateY(-12px);
+  transition: 0.2s ease;
+}
+
+.form-field:valid:not(select.form-field) {
+  padding: 16px 0 0 20px;
+}
+
 .form-label {
   position: absolute;
   top: 0;

@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.2;
+
+  color: #333;
+
+  overflow: hidden;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  display: none;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: #eeedef;
+}
+
+.container {
+  position: relative;
+}
+
+.navbar-list {
+  margin-top: 200px;
+
+  display: flex;
+  justify-content: center;
+
+  border: 1px solid #eeedef;
+}
+
+.navbar-item {
+  display: block;
+
+  border: 1px solid #eeedef;
+}
+
+label {
+  display: block;
+  padding: 12px;
+
+  border: 4px solid #fff;
+
+  color: #333;
+  background-color: #fff;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+label:hover {
+  color: #fff;
+  background-color: #4198dd;
+}
+
+.content-list {
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+.content-item {
+  max-width: 715px;
+  display: block;
+  position: absolute;
+  left: 1px;
+  background-color: #fff;
+
+  border: 1px solid #eeedef;
+  transform-origin: top;
+
+  transform: rotateX(-90deg);
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition: 0.6s ease-in-out;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  overflow-x: scroll;
+}
+
+.heading--h2 {
+  margin: 12px 0 0 16px;
+}
+
+.desc {
+  width: 800px;
+  margin: 0 0 16px 16px;
+}
+
+input[type="radio"]#simples:checked ~ .container #simples,
+input[type="radio"]#algoritmo:checked ~ .container #algoritmo,
+input[type="radio"]#barra:checked ~ .container #barra,
+input[type="radio"]#capcha:checked ~ .container #capcha {
+  transform: rotateX(0);
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0.2s;
+}
+
+input[type="radio"]#simples:checked ~ .container label[for="simples"],
+input[type="radio"]#algoritmo:checked ~ .container label[for="algoritmo"],
+input[type="radio"]#barra:checked ~ .container label[for="barra"],
+input[type="radio"]#capcha:checked ~ .container label[for="capcha"] {
+  color: #fff;
+  background-color: #4198dd;
+}

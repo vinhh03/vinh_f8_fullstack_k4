@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow: hidden;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.2;
+
+  color: #333;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.burger-menu {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+
+  background-color: #31a8f7;
+}
+
+.content {
+  margin-right: 120px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: right;
+
+  color: #fff;
+}
+
+.heading--h1 {
+  font-size: 5.7rem;
+  font-weight: 700;
+
+  color: #fff;
+}
+
+.desc {
+  font-weight: 100;
+}
+
+.desc--highlight {
+  font-size: 2.4rem;
+}
+
+.circle-bg {
+  width: 200px;
+  height: 200px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+
+  transform: translate(-50%, -50%);
+  transition: 0.2s ease;
+}
+
+input[type="checkbox"]:checked ~ .circle-bg {
+  width: 300%;
+  height: 300%;
+}
+
+.menu-list {
+  display: none;
+  width: 110px;
+  height: 110px;
+
+  position: relative;
+  top: 60px;
+  z-index: 1;
+
+  transition: 0.2s ease;
+}
+
+input[type="checkbox"]:checked ~ .menu-list {
+  display: block;
+}
+
+.menu-item {
+  width: 240px;
+
+  text-indent: 5.6rem;
+}
+
+.menu-link {
+  display: block;
+  margin: 76px 0 -56px 0;
+
+  font-size: 2.4rem;
+  font-weight: 700;
+
+  color: #03a9f4;
+}
+
+.menu-link:focus {
+  display: block;
+
+  color: #333;
+  background-color: #eee;
+
+  transition: all 0.5s;
+}
+
+.arrow-left-icon,
+.bars-icon,
+.bars-icon:before,
+.bars-icon:after {
+  width: 30px;
+  height: 5px;
+
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 1;
+
+  background: #03a9f4;
+
+  transition: 0.2s ease;
+
+  cursor: pointer;
+}
+.arrow-left-icon {
+  height: 25px;
+
+  background: none;
+}
+.bars-icon:before {
+  content: " ";
+  top: 10px;
+  left: 0;
+}
+.bars-icon:after {
+  content: " ";
+  top: 20px;
+  left: 0;
+}
+
+input[type="checkbox"]:checked ~ .bars-icon {
+  top: 35px;
+
+  transform: rotate(180deg);
+  transition: transform 0.2s ease;
+}
+
+input[type="checkbox"]:checked ~ .bars-icon:before {
+  width: 20px;
+
+  top: -2px;
+  left: 18px;
+
+  transform: rotate(45deg) translateX(-5px);
+  transition: transform 0.2s ease;
+}
+
+input[type="checkbox"]:checked ~ .bars-icon:after {
+  width: 20px;
+
+  top: 2px;
+  left: 18px;
+
+  transform: rotate(-45deg) translateX(-5px);
+  transition: transform 0.2s ease;
+}
