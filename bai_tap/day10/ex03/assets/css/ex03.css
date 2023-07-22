@@ -42,6 +42,11 @@
   height: 400px;
   overflow: hidden;
   top: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.container:hover .envelope {
+  transform: translateY(80px);
 }
 
 .envelope::before {
@@ -52,7 +57,7 @@
   border-left: 200px solid #d85449;
   border-right: 200px solid #de6055;
   bottom: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .envelope::after {
@@ -62,12 +67,17 @@
   height: 200px;
   background-color: #cb4c44;
   bottom: 0;
+  z-index: 0;
 }
 
 .container:hover .seal-flap {
   transform-origin: top;
   transform: rotateX(-180deg);
   z-index: 0;
+}
+
+.container:not(:hover) .seal-flap {
+  transition-delay: 0.4s;
 }
 
 .container:hover .envelope::before {
@@ -91,6 +101,7 @@
   overflow: hidden;
   transform: translateY(50%);
   transition: 0.6s ease-in-out;
+  z-index: 1;
 }
 
 .stripe {
@@ -135,4 +146,9 @@
   position: absolute;
   bottom: 60px;
   filter: blur(8px);
+  transition: 0.4s ease-in-out;
+}
+
+.container:hover .shadow {
+  scale: 0.6;
 }
