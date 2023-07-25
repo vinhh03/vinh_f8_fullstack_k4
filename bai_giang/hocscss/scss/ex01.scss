@@ -1,0 +1,46 @@
+$primaryColor: red;
+$fontFamily: Roboto, san-serif;
+
+.header {
+  padding: 60px 0;
+  .header-inner {
+    display: flex;
+    justify-content: center;
+
+    .logo {
+      max-height: 150px;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .menu {
+      ul {
+        list-style: none;
+        display: flex;
+        > li {
+          > a {
+            display: block;
+            text-decoration: none;
+            &:hover {
+              background-color: red;
+              &::after {
+                background-color: $primaryColor;
+              }
+            }
+            &::after {
+              background: green;
+            }
+          }
+        }
+
+        + li {
+          > a {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

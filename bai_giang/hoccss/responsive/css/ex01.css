@@ -29,3 +29,51 @@ body {
     color: blue;
   }
 }
+
+.col-sm-1 {
+  --column-size: 1;
+}
+
+.col-sm-2 {
+  --column-size: 2;
+}
+
+.col-sm-3 {
+  --column-size: 3;
+}
+
+.col-sm-4 {
+  --column-size: 4;
+}
+
+.col-sm-5 {
+  --column-size: 5;
+}
+
+.col-sm-6 {
+  --column-size: 6;
+}
+
+.col-sm-7 {
+  --column-size: 7;
+}
+
+.col-sm-8 {
+  --column-size: 8;
+}
+
+.col-sm-9 {
+  --column-size: 9;
+}
+
+.col-sm-10 {
+  --column-size: 10;
+}
+
+.col-sm-11 {
+  --column-size: 11;
+}
+
+.col-sm-12 {
+  --column-size: 12;
+}
