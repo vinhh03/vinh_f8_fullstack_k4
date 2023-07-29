@@ -1,0 +1,33 @@
+@import "parts/mixin";
+@import "parts/variables";
+@mixin center($type) {
+  @if $type == flex {
+    display: flex;
+    justify-content: center;
+  } @else if $type == margin {
+    div {
+      margin: 0 auto;
+    }
+  } @else if $type == position {
+    position: relative;
+    div {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  } @else {
+    text-align: center;
+    div {
+      display: inline-block;
+      text-align: left;
+    }
+  }
+}
+
+.container {
+  @include center(text);
+  div {
+    width: 300px;
+    border: 1px solid red;
+  }
+}

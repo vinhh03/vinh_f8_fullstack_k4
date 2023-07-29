@@ -1,0 +1,26 @@
+.box {
+  padding: 20px 0;
+}
+
+.w-500 {
+  width: 100%;
+}
+
+.col-5 {
+  width: 50%;
+}
+
+.products, .posts {
+  padding: 30px 0;
+  border: 1px solid red;
+}
+
+.posts {
+  background: green;
+}
+
+.products {
+  background: gray;
+}
+
+/*# sourceMappingURL=ex02.css.map */

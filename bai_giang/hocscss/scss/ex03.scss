@@ -1,0 +1,21 @@
+@mixin section-base {
+  padding: 30px 0;
+  border: 1px solid #ccc;
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.products {
+  @include section-base;
+}
+
+@mixin center($width, $spacer: 0) {
+  width: $width;
+  margin: $spacer auto;
+}
+
+.posts {
+  @include center(1200, 0);
+}

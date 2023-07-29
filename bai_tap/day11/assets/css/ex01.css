@@ -363,7 +363,7 @@ input[type="checkbox"]:checked ~ .d-none {
   z-index: 0;
 
   width: 296px;
-  height: 340px;
+  height: 380px;
 
   border-radius: 12px;
   background: #fe6a6a;
