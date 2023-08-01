@@ -1,0 +1,55 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: $headerHeight;
+
+  height: 632px;
+
+  .banner-content {
+    margin-left: calc((100vw - 1160px) / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .banner-title {
+      font-size: 3.6rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .banner-subtitle {
+      font-size: 4.4rem;
+      font-weight: 800;
+      margin-bottom: 28px;
+    }
+    .banner-desc {
+      width: 448px;
+      font-weight: 400;
+    }
+  }
+
+  .banner-cover {
+    position: relative;
+    width: 46vw;
+    background-color: $greenColor200;
+    border-radius: 16.667px 0px 0px 16.667px;
+    .cover-text {
+      position: absolute;
+      top: 140px;
+      right: -92px;
+      color: $greenColor1000;
+      opacity: 0.15;
+      font-weight: 800;
+      font-size: 10vw;
+      transform: rotate(90deg);
+      line-height: 1;
+    }
+    .cover-img {
+      display: block;
+      position: absolute;
+      width: 660px;
+      height: auto;
+      left: -152px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

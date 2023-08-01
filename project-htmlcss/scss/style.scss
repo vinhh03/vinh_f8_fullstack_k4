@@ -1,0 +1,12 @@
+@import "./parts/variables";
+@import "./parts/fonts";
+@import "./parts/reset";
+@import "./parts/mixin";
+@import "./parts/base";
+@import "./parts/grid";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./pages/home/banner";
+@import "./pages/home/quality";
