@@ -89,7 +89,7 @@ header {
 
 .day__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .heading--h2 {
