@@ -72,3 +72,31 @@ for (var i = 1; i <= 10; i++) {
     break;
   }
 }
+
+function isPrime(a) {
+  var check = true;
+  if (a % 1 !== 0 || a <= 1) {
+    check = false;
+  } else {
+    for (var i = 2; i < a; i++) {
+      if (a % i === 0) {
+        check = false;
+      }
+    }
+  }
+  return check;
+}
+
+function sumPrime(n) {
+  var sum = 0,
+    i = 2;
+  while (i < n) {
+    if (isPrime(i)) {
+      sum += i;
+    }
+    i++;
+  }
+  return sum;
+}
+
+console.log(sumPrime(5));

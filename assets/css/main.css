@@ -90,6 +90,7 @@ header {
 .day__list {
   display: flex;
   justify-content: center;
+  column-gap: 40px;
 }
 
 .heading--h2 {
