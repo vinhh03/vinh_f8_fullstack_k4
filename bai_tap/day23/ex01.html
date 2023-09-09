@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập Dân trí</title>
+    <!-- Link font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./assets/css/ex01.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="#">
+          <img src="./assets/images/dan-tri-logo.svg" alt="Logo dân trí" />
+        </a>
+      </div>
+      <div class="nav">
+        <a href="#" class="btn-link">
+          <img src="./assets/images/fica-logo.jpg" alt="Logo Fica" />
+          Fica
+        </a>
+        <a href="#" class="btn-link">
+          <img src="./assets/images/dtinews-logo.png" alt="Logo DTiNews" />
+
+          DTiNews
+        </a>
+        <div class="weather">
+          <div class="calendar">
+            <div class="location">Hà Nội</div>
+            <div class="date">Thứ 6, 08/09/2023</div>
+          </div>
+          <div class="weather-img">
+            <img src="./assets/images/cloudy.svg" alt="" />
+          </div>
+          <div class="temperature">28°C</div>
+        </div>
+        <div class="login"><a name="login" href="#">Đăng nhập</a></div>
+        <div class="icon-list">
+          <label for="login" class="user icon">
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+          </label>
+          <div class="search icon">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="overlay"></div>
+      <div class="form">
+        <div class="form-nav">
+          <a class="login-switch" href="#"> Đăng nhập </a>
+          <a class="sign-up-switch" href="#"> Đăng ký </a>
+        </div>
+        <form class="login-form">
+          <p class="desc">với các tài khoản mạng xã hội</p>
+          <div class="social-list">
+            <a class="social-link" href="#">
+              <img src="./assets/images/google-icon.svg" alt="Google icon" />
+              Google
+            </a>
+            <a class="social-link" href="#">
+              <img
+                src="./assets/images/facebook-icon.svg"
+                alt="Facebook icon"
+              />
+              Facebook
+            </a>
+          </div>
+          <div class="divider">hoặc</div>
+          <label class="form-field">
+            Email
+            <input type="email" placeholder="Email" />
+          </label>
+          <label class="form-field">
+            Mật khẩu
+            <input type="password" placeholder="Mật khẩu" />
+            <i class="icon fa-solid fa-eye"></i>
+          </label>
+          <a href="#" class="forgot-password">Quên mật khẩu?</a>
+          <button class="btn-login btn--primary" type="submit">
+            Đăng nhập
+          </button>
+        </form>
+
+        <form class="sign-up-form">
+          <p class="desc">Hoàn thành đăng ký, và bắt đầu trải nghiệm ngay!</p>
+          <label class="form-field">
+            Họ và tên
+            <input type="text" placeholder="Họ và tên" />
+          </label>
+          <label class="form-field">
+            Email
+            <input type="email" placeholder="Email" />
+          </label>
+          <label class="form-field">
+            Mật khẩu
+            <input type="password" placeholder="Mật khẩu" />
+            <i class="icon fa-solid fa-eye"></i>
+          </label>
+          <p class="policy">
+            Bằng cách đăng ký tài khoản, bạn cũng đồng thời chấp nhận mọi
+            <a href="#">điều kiện về qui định và chính sách của Dân trí</a>
+          </p>
+          <button class="btn-sign-up btn--primary" type="submit">
+            Đăng ký
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/ex01.js"></script>
+  </body>
+</html>
