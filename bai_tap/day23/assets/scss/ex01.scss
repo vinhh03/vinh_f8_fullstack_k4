@@ -25,6 +25,7 @@ input {
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 .header {
@@ -196,7 +197,7 @@ button {
         }
       }
 
-      .form-field {
+      .form-group {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -277,4 +278,13 @@ button {
 .inactive {
   color: #999;
   background-color: #eee;
+}
+
+.invalid {
+  input {
+    border-color: red !important;
+  }
+  span {
+    color: red !important;
+  }
 }

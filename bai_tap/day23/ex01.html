@@ -65,7 +65,7 @@
           <a class="login-switch" href="#"> Đăng nhập </a>
           <a class="sign-up-switch" href="#"> Đăng ký </a>
         </div>
-        <form class="login-form">
+        <form class="login-form" id="form-1">
           <p class="desc">với các tài khoản mạng xã hội</p>
           <div class="social-list">
             <a class="social-link" href="#">
@@ -81,35 +81,45 @@
             </a>
           </div>
           <div class="divider">hoặc</div>
-          <label class="form-field">
-            Email
-            <input type="email" placeholder="Email" />
-          </label>
-          <label class="form-field">
-            Mật khẩu
-            <input type="password" placeholder="Mật khẩu" />
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input name="email" id="email" type="email" placeholder="Email" />
+            <span class="form-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="password">Mật khẩu</label>
+            <input
+              name="password"
+              id="password"
+              type="password"
+              placeholder="Mật khẩu"
+            />
             <i class="icon fa-solid fa-eye"></i>
-          </label>
+            <span class="form-message"></span>
+          </div>
           <a href="#" class="forgot-password">Quên mật khẩu?</a>
           <button class="btn-login btn--primary" type="submit">
             Đăng nhập
           </button>
         </form>
 
-        <form class="sign-up-form">
+        <!-- <form class="sign-up-form">
           <p class="desc">Hoàn thành đăng ký, và bắt đầu trải nghiệm ngay!</p>
-          <label class="form-field">
+          <label class="form-group">
             Họ và tên
-            <input type="text" placeholder="Họ và tên" />
+            <input id="fullname" type="text" placeholder="Họ và tên" />
+            <span class="form-message"></span>
           </label>
-          <label class="form-field">
+          <label class="form-group">
             Email
-            <input type="email" placeholder="Email" />
+            <input id="email" type="email" placeholder="Email" />
+            <span class="form-message"></span>
           </label>
-          <label class="form-field">
+          <label class="form-group">
             Mật khẩu
-            <input type="password" placeholder="Mật khẩu" />
+            <input id="password" type="password" placeholder="Mật khẩu" />
             <i class="icon fa-solid fa-eye"></i>
+            <span class="form-message"></span>
           </label>
           <p class="policy">
             Bằng cách đăng ký tài khoản, bạn cũng đồng thời chấp nhận mọi
@@ -118,10 +128,28 @@
           <button class="btn-sign-up btn--primary" type="submit">
             Đăng ký
           </button>
-        </form>
+        </form> -->
       </div>
     </div>
 
     <script src="./js/ex01.js"></script>
+
+    <script>
+      Validator({
+        form: "#form-1",
+        errorSelector: ".form-message",
+        rules: [
+          Validator.isRequired("#email"),
+          Validator.isEmail("#email"),
+          Validator.isRequired("#password"),
+          Validator.minLength(
+            "#password",
+            6,
+            20,
+            "Mật khẩu tối thiểu 6-20 ký tự "
+          ),
+        ],
+      });
+    </script>
   </body>
 </html>

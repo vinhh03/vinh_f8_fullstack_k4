@@ -25,6 +25,7 @@ input {
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 .header {
@@ -180,8 +181,8 @@ button {
 .container .form .sign-up-form .social-list .social-link img {
   height: 28px;
 }
-.container .form .login-form .form-field,
-.container .form .sign-up-form .form-field {
+.container .form .login-form .form-group,
+.container .form .sign-up-form .form-group {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -193,21 +194,21 @@ button {
   font-weight: 400;
   color: #1a1a1a;
 }
-.container .form .login-form .form-field input,
-.container .form .sign-up-form .form-field input {
+.container .form .login-form .form-group input,
+.container .form .sign-up-form .form-group input {
   width: 100%;
   padding: 12px 16px;
   border-radius: 6px;
   border: 1px solid #ccc;
 }
-.container .form .login-form .form-field input::placeholder,
-.container .form .sign-up-form .form-field input::placeholder {
+.container .form .login-form .form-group input::placeholder,
+.container .form .sign-up-form .form-group input::placeholder {
   font-size: 14px;
   line-height: 22px;
   font-weight: 400;
 }
-.container .form .login-form .form-field .icon,
-.container .form .sign-up-form .form-field .icon {
+.container .form .login-form .form-group .icon,
+.container .form .sign-up-form .form-group .icon {
   position: absolute;
   right: 12px;
   top: 36px;
@@ -258,6 +259,13 @@ button {
 .inactive {
   color: #999;
   background-color: #eee;
+}
+
+.invalid input {
+  border-color: red !important;
+}
+.invalid span {
+  color: red !important;
 }
 
 /*# sourceMappingURL=ex01.css.map */
