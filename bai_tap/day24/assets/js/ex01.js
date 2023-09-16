@@ -32,7 +32,7 @@ function editTodoList(id) {
     <input
       type="text"
       class="edit-input-${id}"
-      placeholder="Now! You can edit a task"
+      placeholder="Now! You can edit a task."
       value="${todoList[id].name}"
     />
     <button class="edit-btn-${id}">Edit Task</button>
