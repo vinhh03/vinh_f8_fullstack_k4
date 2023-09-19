@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/ex01.css" />
+  </head>
+  <body>
+    <div class="player">
+      <div class="dashboard">
+        <header>
+          <h4>Now playing:</h4>
+          <h2>String 57th & 9th</h2>
+        </header>
+
+        <div class="cd">
+          <div class="cd-thumb"></div>
+        </div>
+        <!-- End .cd -->
+
+        <div class="control">
+          <div class="btn btn-repeat">
+            <i class="fas fa-redo"></i>
+          </div>
+          <div class="btn btn-prev">
+            <img src="./assets/images/icon/prev-song.svg" alt="" />
+          </div>
+          <div class="btn btn-toggle-play">
+            <img src="./assets/images/icon/play.svg" alt="" class="icon-play" />
+            <img
+              src="./assets/images/icon/pause.svg"
+              alt=""
+              class="icon-pause"
+            />
+          </div>
+          <div class="btn btn-next">
+            <img src="./assets/images/icon/next-song.svg" alt="" />
+          </div>
+          <div class="btn btn-random">
+            <i class="fas fa-random"></i>
+          </div>
+        </div>
+        <!-- End .control -->
+        <div class="play-inner">
+          <span class="time">00:00</span>
+          <div class="progress-bar">
+            <input
+              id="progress"
+              class="progress"
+              type="range"
+              value="0"
+              step="1"
+              min="0"
+              max="100"
+            />
+            <!-- <div class="progress"></div> -->
+          </div>
+          <!-- End .progress-bar -->
+          <span class="time">00:00</span>
+        </div>
+        <!-- End .play-inner -->
+        <audio id="audio" src=""></audio>
+      </div>
+      <!-- End .dashboard -->
+
+      <div class="playlist"></div>
+    </div>
+    <!-- End .player -->
+
+    <script src="./assets/js/ex01.js"></script>
+  </body>
+</html>

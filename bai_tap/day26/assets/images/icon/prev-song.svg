@@ -1,0 +1,22 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Last song">
+<g id="Group ">
+<circle id="Ellipse 4" cx="24" cy="24" r="22" fill="#1A1C20" stroke="url(#paint0_linear_1_154)" stroke-width="3"/>
+<g id="Group 2">
+<path id="&#232;&#183;&#175;&#229;&#190;&#132; 2" fill-rule="evenodd" clip-rule="evenodd" d="M26.0527 20.122C26.7096 19.6111 27.6667 20.0792 27.6667 20.9113V27.0887C27.6667 27.9208 26.7096 28.3889 26.0527 27.878L22.0816 24.7894C21.5668 24.389 21.5668 23.611 22.0816 23.2106L26.0527 20.122Z" fill="#797C7F"/>
+<rect id="&#231;&#159;&#169;&#229;&#189;&#162;" width="1.46667" height="7.33333" rx="0.733333" transform="matrix(-1 0 0 1 21.8 20.3333)" fill="#797C7F"/>
+</g>
+</g>
+<circle id="Ellipse 4_2" cx="24" cy="24" r="22" stroke="url(#paint1_linear_1_154)" stroke-width="3"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1_154" x1="-27.0375" y1="11.6331" x2="10.9818" y2="59.4997" gradientUnits="userSpaceOnUse">
+<stop stop-color="#41464B"/>
+<stop offset="1" stop-color="#0E1013"/>
+</linearGradient>
+<linearGradient id="paint1_linear_1_154" x1="17.63" y1="49.8701" x2="85.5862" y2="55.5341" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D3450A" stop-opacity="0.01"/>
+<stop offset="1" stop-color="#B93D09" stop-opacity="0.546219"/>
+</linearGradient>
+</defs>
+</svg>
