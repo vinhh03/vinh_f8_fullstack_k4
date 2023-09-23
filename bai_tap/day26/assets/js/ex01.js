@@ -148,6 +148,7 @@ const app = {
     audio.addEventListener("timeupdate", function () {
       currentTimeEl.innerText = getTime(audio.currentTime);
     });
+
     // Xử lý khi click play
     playBtn.addEventListener("click", function () {
       if (_this.isPlaying) {
